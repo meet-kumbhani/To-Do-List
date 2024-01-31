@@ -33,13 +33,8 @@ function App() {
       setinputdata("");
     }
 
-  };
-
-  // Save item in LS
-
-  useEffect(() => {
     localStorage.setItem("items", JSON.stringify([...itemStates, { inputdata, runtime: false, pendingcolor: "red", oncolor: "", donecolor: "", strike: "", seconds: 0, opacity: "", starttime: "", endtime: "" }]))
-  }, []);
+  };
 
   // Get Data From LS
 
